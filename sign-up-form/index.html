@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="form-wrap">
+        <header>
+          <h1>sign up</h1>
+          <p>you know you want to...</p>
+        </header>
+
+        <form action="https://formspree.io/f/mwkwbwzz" method="POST">
+          <div class="form-group">
+            <label for="range">cool factor</label>
+            <input type="range" name="range" id="range" required />
+          </div>
+          <div class="form-group">
+            <label for="fname">first name</label>
+            <input
+              type="text"
+              name="first-name"
+              id="fname"
+              placeholder="enter your first name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="lname">last name</label>
+            <input
+              type="text"
+              name="last-name"
+              id="lname"
+              placeholder="enter your last name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">email</label>
+            <input
+              type="email"
+              name="e-email"
+              id="email"
+              placeholder="enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="enter password"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password2">confirm password</label>
+            <input
+              type="password"
+              name="confirmed-password"
+              id="password2"
+              placeholder="confirm password"
+            />
+          </div>
+
+          <div class="form-group">
+            <input type="checkbox" name="terms" id="terms" />
+            <label for="subscribe"
+              >by checking the box you agree to terms and conditions</label
+            >
+          </div>
+
+          <button type="submit">submit</button>
+        </form>
+      </section>
+      <footer>
+        <p>already have an account? <a href="">click here</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
